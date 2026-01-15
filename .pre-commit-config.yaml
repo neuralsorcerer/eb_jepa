@@ -3,11 +3,10 @@ repos:
     rev: 6.0.1
     hooks:
       - id: isort
-        args: ["--check", "--profile", "black"]
+        args: ["--profile", "black"]
         files: "^(eb_jepa|examples|tests)/"
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
       - id: black
-        args: ["--check"]
         files: "^(eb_jepa|examples|tests)/"
